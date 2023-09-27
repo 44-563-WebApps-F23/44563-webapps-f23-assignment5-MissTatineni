@@ -11,8 +11,30 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">   
+
 </head>
 <body>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+    <a class="navbar-brand" href="cities.html">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="basic.html">Basic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="advanced.html">Advanced</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
 <h1>Visit cities with Bhargavi Tatineni!</h1>
 
@@ -38,6 +60,129 @@
 
 <p></p>
 <p>Upon reducing the size slowly, <b>row of city names is breaking first!</b> This happens because of col-md being less tolerant to small screen sizes.</p>
+
+<div class="container"> 
+  <img src="Amsterdam.jpg" class="img-fluid" height="400" width="400" alt="amsterdam">
+  <img src="NewYork.jpg" class="img-fluid" height="400" width="400" alt="newYork">
+  <img src="Tokyo.jpg"  class="img-fluid" height="400" width="400" alt="Tokyo">
+</div>
+<br>
+<div class="container">
+  <img src="Amsterdam.jpg" class="img-thumbnail" height="400" width="400" alt="amsterdam">
+  <img src="NewYork.jpg" class="img-thumbnail" height="400" width="400" alt="newYork">
+  <img src="Tokyo.jpg"  class="img-thumbnail" height="400" width="400" alt="Tokyo">
+</div>
+<br>
+
+<table class="table table-striped table-hover table-bordered table-sm ">
+  <caption>Table for Letter,Cities,River and Tree</caption>
+  <thead class="table-dark">
+    <tr class="text-center" >
+      <th scope="col">Letter</th>
+      <th scope="col" >City</th>
+      <th scope="col">River</th>
+      <th scope="col">Tree</th>
+    </tr>
+  </thead>
+  <tbody class="table-bordered">
+    <tr class="table-primary text-center">
+      <td >T</td>
+      <td >Tokyo</td>
+      <td >Tunghabadhra</td>
+      <td >Tamarind</td>
+    </tr>
+
+    <tr class="text-center">
+      <td >A</td>
+      <td >Amsterdam</td>
+      <td >Alabama</td>
+      <td >Apple</td>
+    </tr>
+
+    <tr class="text-center table-secondary">
+      <td >T</td>
+      <td >Toronto</td>
+      <td >Teal</td>
+      <td >Teak</td>
+    </tr>
+
+    <tr class="text-center">
+      <td >I</td>
+      <td >Indore</td>
+      <td >Indus</td>
+      <td >Ivory palm</td>
+    </tr>
+
+    <tr class="text-center table-danger">
+      <td >N</td>
+      <td >NewYork</td>
+      <td >Narmada</td>
+      <td >Neem</td>
+    </tr>
+
+    <tr class="text-center">
+      <td >E</td>
+      <td >El Paso</td>
+      <td >Ebro</td>
+      <td >Eucalyptus</td>
+    </tr>
+
+</tbody>
+
+</table>
+
+
+<div class="btn-toolbar" aria-label="NavigationBar">
+  <div class="btn-group me-2" aria-label="Group1">
+    <button type="button" class="btn btn-success">T</button>
+    <button type="button" class="btn btn-success">A</button>
+    <button type="button" class="btn btn-success">N</button>
+  
+  </div>
+  
+  <div class="btn-group me-2 btn-warning" aria-label="Group2">
+    <button type="button" class="btn btn-warning">T</button>
+    <button type="button" class="btn btn-warning">I</button>
+  </div>
+  
+  <div class="btn-group me-2 btn-danger" aria-label="Group3">
+    <button type="button" class="btn btn-danger">E</button>
+  </div>
+</div>
+
+<p></p>
+
+ <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="basic.html">Basic</a>
+        <a class="dropdown-item" href="advanced.html">Advanced</a>
+      </div>
+ </div>
+<br>
+<br>
+ <form>
+    <div class="form-group">
+      <label for="exampleInputEmail" class="form-label">Email id</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group">
+      <label for="City" class="form-label">City</label>
+      <input type="text" class="form-control" id="cityInput" placeholder ="Enter your city">
+    </div>
+    <div class="form-check">
+      <label for="Newsletter" class="form-check-label">
+        Sign up for newsletter?
+      </label>
+      <input type="checkbox" class="form-check-input" id="newsLetter">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+
 
 </body>
 </html>
